@@ -177,7 +177,8 @@ for_window [instance="dropdown"] move scratchpad
 # auto start stuff
 exec xset b off
 exec --no-startup-id compton
-# exec --no-startup-id dropbox
+exec --no-startup-id dropbox
+exec --no-startup-id nm-applet
 exec --no-startup-id ~/.fehbg
 exec --no-startup-id mpd
 exec --no-startup-id redshift
