@@ -44,6 +44,7 @@ Plug 'bfrg/vim-cpp-modern'
 Plug 'vim-syntastic/syntastic'
 Plug 'jpalardy/vim-slime'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'maverickg/stan.vim'
 call plug#end()
 
 " misc settings
