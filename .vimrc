@@ -57,14 +57,17 @@ set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
 " because I only use c++ through rcpp:
+" and because .tex doesn't need it
 let g:syntastic_mode_map = {
     \ "mode": "active",
-    \ "passive_filetypes": ["cpp"] }
+    \ "passive_filetypes": ["cpp", "tex"] }
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
+let g:syntastic_enable_r_lintr_checker = 1
+let g:syntastic_r_checkers = ['lintr']
 
 """"""""""""""""""""""""""""""""""""""""
 " python google indentation
@@ -103,3 +106,4 @@ endfunction
 let pyindent_nested_paren="&sw*2"
 let pyindent_open_paren="&sw*2"
 """"""""""""""""""""""""""""""""""""""""
+

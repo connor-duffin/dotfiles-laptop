@@ -176,10 +176,10 @@ for_window [instance="dropdown"] move scratchpad
 
 # auto start stuff
 exec xset b off
+exec feh --bg-fill "/home/connor/Pictures/Wallpapers/city 14.jpg"
 exec --no-startup-id compton
 exec --no-startup-id dropbox
 exec --no-startup-id nm-applet
-exec --no-startup-id feh --bg-fill "city 14.jpg"
 exec --no-startup-id mpd
 exec --no-startup-id redshift
 exec --no-startup-id unclutter -grab &
@@ -202,12 +202,12 @@ exec_always --no-startup-id xmodmap -e "keycode 9 = Caps_Lock NoSymbol Caps_Lock
 exec_always --no-startup-id xmodmap -e "keycode 66 = Escape NoSymbol Escape"
 
 # office setup
-bindsym $mod+y exec --no-startup-id xrandr --output DP1 --auto; exec xrandr --output LVDS1 --off; exec --no-startup-id feh --bg-fill "city 14.jpg"
+bindsym $mod+y exec --no-startup-id xrandr --output DP1 --auto; exec xrandr --output LVDS1 --off; exec --no-startup-id feh --bg-fill "/home/connor/Pictures/Wallpapers/city 14.jpg"
 # home setup
-bindsym $mod+Shift+y exec --no-startup-id xrandr --output HDMI1 --auto; exec xrandr --output LVDS1 --off; exec --no-startup-id feh --bg-fill "city 14.jpg"
+bindsym $mod+Shift+y exec --no-startup-id xrandr --output HDMI1 --auto; exec xrandr --output LVDS1 --off; exec --no-startup-id feh --bg-fill "/home/connor/Pictures/Wallpapers/city 14.jpg"
 # laptop setupfeh --bg-fill "city 14.jpg"
 
-bindsym $mod+Shift+x exec xrandr --output LVDS1 --auto; exec --no-startup-id xrandr --output HDMI1 --off; exec --no-startup-id feh --bg-fill "city 14.jpg"
+bindsym $mod+Shift+x exec xrandr --output LVDS1 --auto; exec --no-startup-id xrandr --output HDMI1 --off; exec --no-startup-id feh --bg-fill "/home/connor/Pictures/Wallpapers/city 14.jpg"
 
 
 # set primary gruvbox colors
