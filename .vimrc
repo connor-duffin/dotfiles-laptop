@@ -41,7 +41,6 @@ Plug 'vim-pandoc/vim-pandoc-syntax'
 Plug 'vim-pandoc/vim-rmarkdown'
 Plug 'rstudio/rmarkdown'
 Plug 'bfrg/vim-cpp-modern'
-Plug 'vim-syntastic/syntastic'
 Plug 'jpalardy/vim-slime'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'maverickg/stan.vim'
@@ -52,22 +51,22 @@ let g:vimtex_view_method = 'zathura' " set zathura as default pdf
 let g:pandoc#syntax#conceal#use = 0 " stop hiding syntax
 
 " syntastic settings
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+" set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*
 
 " because I only use c++ through rcpp:
 " and because .tex doesn't need it
-let g:syntastic_mode_map = {
-    \ "mode": "active",
-    \ "passive_filetypes": ["cpp", "tex"] }
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 0
-let g:syntastic_check_on_wq = 0
-let g:syntastic_enable_r_lintr_checker = 1
-let g:syntastic_r_checkers = ['lintr']
+" let g:syntastic_mode_map = {
+"     \ "mode": "active",
+"     \ "passive_filetypes": ["cpp", "tex"] }
+" 
+" let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_auto_loc_list = 1
+" let g:syntastic_check_on_open = 0
+" let g:syntastic_check_on_wq = 0
+" let g:syntastic_enable_r_lintr_checker = 1
+" let g:syntastic_r_checkers = ['lintr']
 
 """"""""""""""""""""""""""""""""""""""""
 " python google indentation
