@@ -11,6 +11,7 @@ set background=dark
 map <C-n> :NERDTreeToggle<CR>
 map <C-a> :"*y<CR>
 map <C-A> :%y+<CR>
+nnoremap <C-q> :q!<CR>
 nnoremap <C-j> <C-W><C-j>
 nnoremap <C-k> <C-W><C-k>
 nnoremap <C-l> <C-W><C-l>
@@ -44,27 +45,31 @@ Plug 'bfrg/vim-cpp-modern'
 Plug 'jpalardy/vim-slime'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'maverickg/stan.vim'
+Plug 'vim-syntastic/syntastic'
 call plug#end()
 
 " misc settings
 let g:vimtex_view_method = 'zathura' " set zathura as default pdf
 let g:pandoc#syntax#conceal#use = 0 " stop hiding syntax
+let g:slime_target = "tmux"
+let g:slime_default_config = {"socket_name": "default", "target_pane": "{right-of}"}
+let python_highlight_all = 1
 
 " syntastic settings
-" set statusline+=%#warningmsg#
-" set statusline+=%{SyntasticStatuslineFlag()}
-" set statusline+=%*
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
 
 " because I only use c++ through rcpp:
 " and because .tex doesn't need it
-" let g:syntastic_mode_map = {
-"     \ "mode": "active",
-"     \ "passive_filetypes": ["cpp", "tex"] }
-" 
-" let g:syntastic_always_populate_loc_list = 1
-" let g:syntastic_auto_loc_list = 1
-" let g:syntastic_check_on_open = 0
-" let g:syntastic_check_on_wq = 0
+let g:syntastic_mode_map = {
+    \ "mode": "active",
+    \ "passive_filetypes": ["cpp", "tex", "R"] }
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_wq = 0
 " let g:syntastic_enable_r_lintr_checker = 1
 " let g:syntastic_r_checkers = ['lintr']
 
