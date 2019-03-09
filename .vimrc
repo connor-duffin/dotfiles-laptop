@@ -1,4 +1,4 @@
-set nu
+set number " relativenumber
 syntax on
 set grepprg=grep\ -nH\ $*
 let g:tex_flavor='latex'

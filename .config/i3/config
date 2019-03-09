@@ -186,7 +186,8 @@ exec --no-startup-id unclutter -grab &
 
 # hotkeys
 bindsym $mod+Shift+f exec $term -e ranger
-bindsym $mod+b       exec firefox
+bindsym $mod+b       exec qutebrowser
+bindsym $mod+Shift+b exec firefox
 bindsym $mod+c       exec rstudio-bin
 bindsym $mod+Shift+c exec mathematica
 bindsym $mod+m       exec $term -e ncmpcpp
