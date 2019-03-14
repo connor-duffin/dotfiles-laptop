@@ -51,8 +51,8 @@ font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = siji:pixelsize=10;1
 
 modules-left = i3 xwindow
-modules-center = date
-modules-right = battery filesystem cpu memory 
+modules-center =
+modules-right = battery filesystem cpu memory date
 
 tray-position = right
 tray-padding = 2
@@ -249,12 +249,12 @@ interval = 5
 date = ""
 date-alt = 
 
-time = " %R - %A %d %B, %Y "
+time = " %a %R "
 time-alt = " %A %d %B, %Y "
 
 format-prefix =
 format-prefix-foreground = ${colors.foreground-alt}
-; format-underline =  ${colors.primary}
+format-underline =  ${colors.primary}
 
 label = %time%
 
