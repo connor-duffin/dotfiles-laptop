@@ -156,12 +156,7 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 20
 # Set gaps and gaps hotkeys
 gaps inner 0
 gaps outer 0 
-# # Inner gaps
-bindsym $mod+g			 gaps inner current plus 5
-bindsym $mod+Shift+g gaps inner current minus 5
-# Outer gaps
-bindsym $mod+z			 gaps outer current plus 5
-bindsym $mod+Shift+z gaps outer current minus 5
+
 # Set to default/no gaps at all
 bindsym $mod+Shift+t gaps inner current set 5; gaps outer current set 5
 bindsym $mod+Shift+d gaps inner current set 0; gaps outer current set 0
@@ -195,6 +190,7 @@ bindsym $mod+i       exec $term -e htop
 bindsym $mod+x       exec i3lock-fancy
 bindsym $mod+u       [instance="dropdown"] scratchpad show; [instance="dropdown"] move position center
 bindsym $mod+p       exec --no-startup-id mpc toggle
+bindsym $mod+z			 exec --no-startup-id zim
 
 #  swap caps lock and escape
 exec_always --no-startup-id xmodmap -e "clear lock"
@@ -203,6 +199,7 @@ exec_always --no-startup-id xmodmap -e "keycode 66 = Escape NoSymbol Escape"
 
 # office setup
 bindsym $mod+y exec --no-startup-id xrandr --output DP1 --auto; exec xrandr --output LVDS1 --off; exec --no-startup-id feh --bg-fill "/home/connor/Pictures/Wallpapers/city 14.jpg"
+
 # home setup
 bindsym $mod+Shift+y exec --no-startup-id xrandr --output HDMI1 --auto; exec xrandr --output LVDS1 --off; exec --no-startup-id feh --bg-fill "/home/connor/Pictures/Wallpapers/city 14.jpg"
 # laptop setupfeh --bg-fill "city 14.jpg"

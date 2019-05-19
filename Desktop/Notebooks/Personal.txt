@@ -1,0 +1,23 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-03-30T11:38:56+08:00
+
+====== Personal ======
+Created Saturday 30 March 2019
+
+To-do:
+* Wash car again this weekend.
+* Organize my books folder into categories.
+* Read history of Brownian motion.
+
+* Goal setting and updating — self authoring program.
+* Write up running schedule.
+* Clean up home directory dotfiles etc.
+* email Michael about deep work — he would be interested.
+
+* Strong hands!
+
+Before selling the Mazda:
+* Bumper fixed.
+* Start paying when they all get back? Will need the money for the time they are gone.
+

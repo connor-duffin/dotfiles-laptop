@@ -1,10 +1,10 @@
 set -o vi
 alias c='clear' 
-alias R='R -q --vanilla'
 alias ls='ls --color=auto'
+alias R='R --quiet' 
 alias wttr='curl wttr.in'
-alias ranger='. ranger'
+export VISUAL='vim'
 export TERM="rxvt-unicode-256color"
 
 PS1=' \W >> '
-export PATH=$PATH:/home/connor/.gem/ruby/2.6.0/bin
+export PATH=$PATH:/home/connor/.local/bin:/home/connor/.gem/ruby/2.6.0/bin:/home/connor/.scripts
