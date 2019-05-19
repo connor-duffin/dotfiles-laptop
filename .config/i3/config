@@ -12,6 +12,9 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec $term
 
+# start a terminal with tmux
+bindsym $mod+Shift+Return exec $term -e tmux
+
 # kill focused window
 bindsym $mod+Shift+q kill
 
@@ -175,14 +178,10 @@ exec --no-startup-id redshift
 exec --no-startup-id unclutter -grab &
 
 # hotkeys
-bindsym $mod+Shift+f exec $term -e ranger
-bindsym $mod+b exec firefox
-bindsym $mod+c       exec rstudio-bin
-bindsym $mod+Shift+c exec mathematica
-bindsym $mod+m       exec $term -e ncmpcpp
-bindsym $mod+Shift+m exec spotify
-bindsym $mod+i       exec $term -e htop
-bindsym $mod+x       exec i3lock-fancy
+bindsym $mod+b       exec --no-startup-id firefox
+bindsym $mod+c       exec --no-startup-id rstudio-bin
+bindsym $mod+Shift+c exec --no-startup-id mathematica
+bindsym $mod+x       exec --no-startup-id i3lock-fancy
 bindsym $mod+u       [instance="dropdown"] scratchpad show; [instance="dropdown"] move position center
 bindsym $mod+p       exec --no-startup-id mpc toggle
 bindsym $mod+z			 exec --no-startup-id zim
