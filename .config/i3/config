@@ -179,6 +179,7 @@ exec --no-startup-id unclutter -grab &
 
 # hotkeys
 bindsym $mod+b       exec --no-startup-id firefox
+bindsym $mod+Shift+b exec --no-startup-id qutebrowser
 bindsym $mod+c       exec --no-startup-id rstudio-bin
 bindsym $mod+Shift+c exec --no-startup-id mathematica
 bindsym $mod+x       exec --no-startup-id i3lock-fancy
