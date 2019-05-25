@@ -187,6 +187,9 @@ bindsym $mod+u       [instance="dropdown"] scratchpad show; [instance="dropdown"
 bindsym $mod+p       exec --no-startup-id mpc toggle
 bindsym $mod+z			 exec --no-startup-id zim
 
+# terminal programs
+bindsym $mod+m       exec --no-startup-id urxvt -e ncmpcpp
+
 # swap caps lock and escape in i3
 exec_always --no-startup-id xmodmap -e "clear lock"
 exec_always --no-startup-id xmodmap -e "keycode 9 = Caps_Lock NoSymbol Caps_Lock"
