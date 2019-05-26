@@ -169,7 +169,7 @@ for_window [instance="dropdown"] move scratchpad
 
 # auto start stuff
 exec xset b off
-exec feh --bg-fill "/home/connor/Pictures/Wallpapers/city 14.jpg"
+exec feh --bg-fill "/home/connor/Pictures/Wallpapers/snow-city-wallpaper.jpg"
 exec --no-startup-id compton
 exec --no-startup-id dropbox
 exec --no-startup-id nm-applet
@@ -196,10 +196,10 @@ exec_always --no-startup-id xmodmap -e "keycode 9 = Caps_Lock NoSymbol Caps_Lock
 exec_always --no-startup-id xmodmap -e "keycode 66 = Escape NoSymbol Escape"
 
 # office setup
-bindsym $mod+y exec --no-startup-id xrandr --output DP1 --auto; exec xrandr --output LVDS1 --off; exec --no-startup-id feh --bg-fill "/home/connor/Pictures/Wallpapers/city 14.jpg"
+bindsym $mod+y exec --no-startup-id xrandr --output DP1 --auto; exec xrandr --output LVDS1 --off; exec --no-startup-id feh --bg-fill "/home/connor/Pictures/Wallpapers/snow-city-wallpaper.jpg"
 
 # home setup
-bindsym $mod+Shift+x exec xrandr --output LVDS1 --auto; exec --no-startup-id xrandr --output HDMI1 --off; exec --no-startup-id feh --bg-fill "/home/connor/Pictures/Wallpapers/city 14.jpg"
+bindsym $mod+Shift+x exec xrandr --output LVDS1 --auto; exec --no-startup-id xrandr --output HDMI1 --off; exec --no-startup-id feh --bg-fill "/home/connor/Pictures/Wallpapers/snow-city-wallpaper.jpg"
 
 # set primary gruvbox colors
 set $bg       #282828
