@@ -49,6 +49,8 @@ Plug 'bfrg/vim-cpp-modern'
 Plug 'jpalardy/vim-slime'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'maverickg/stan.vim'
+Plug 'vim-syntastic/syntastic'
+Plug 'nvie/vim-flake8'
 call plug#end()
 
 " misc settings
@@ -59,5 +61,16 @@ let g:slime_default_config = {"socket_name": "default", "target_pane": "{right-o
 let python_highlight_all = 1
 
 let s:maxoff = 50 " maximum number of lines to look backwards.
+
+" syntastic settings
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_python_checkers=['flake8']
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_wq = 0
 
 filetype indent off
