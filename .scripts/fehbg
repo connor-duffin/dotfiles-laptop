@@ -1,0 +1,3 @@
+#!/bin/sh
+
+feh --bg-fill '/home/connor/Pictures/Wallpapers/grey-wall.jpg' 
