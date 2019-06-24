@@ -169,7 +169,7 @@ for_window [instance="dropdown"] move scratchpad
 
 # auto start stuff
 exec xset b off
-exec feh --bg-fill "/home/connor/Pictures/Wallpapers/snow-city-wallpaper.jpg"
+exec feh --bg-fill "/home/connor/Pictures/Wallpapers/grey-wall.jpg"
 exec --no-startup-id compton
 exec --no-startup-id dropbox
 exec --no-startup-id nm-applet
