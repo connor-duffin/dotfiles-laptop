@@ -1,7 +1,7 @@
 set -o vi
 alias c='clear' 
 alias ls='ls --color=auto'
-alias R='R --quiet' 
+alias R='R --quiet --no-save' 
 alias wttr='curl wttr.in'
 export VISUAL='vim'
 export TERM="rxvt-unicode-256color"
