@@ -7,7 +7,6 @@ local({
 options(
   stringsAsFactors = FALSE,
   prompt = "R > ",
-  digits = 4,
   show.signif.stars = FALSE
 )
 options("pdfviewer" = "zathura") 
