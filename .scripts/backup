@@ -1,3 +1,3 @@
 #!/bin/bash
 
-rsync -a --progress . "/run/media/connor/backup/home-backup/"
+rsync -a --progress "/home/connor/" "/run/media/connor/Backup/home-backup/"
