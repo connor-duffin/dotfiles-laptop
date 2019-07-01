@@ -1,5 +1,4 @@
 set -o vi
-alias c='clear' 
 alias ls='ls --color=auto'
 alias my_scrot='scrot ~/Pictures/%Y-%m-%d-%H%M%s.png'
 alias R='R --quiet --no-save' 
