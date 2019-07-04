@@ -10,6 +10,8 @@ let g:gruvbox_contrast_dark = 'medium'
 set background=dark
 set nofoldenable
 
+set mouse=a
+
 set laststatus=2
 set statusline+=%F
 
