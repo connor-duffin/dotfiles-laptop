@@ -8,6 +8,7 @@ set cc=80
 colorscheme gruvbox
 let g:gruvbox_contrast_dark = 'medium'
 set background=dark
+set nofoldenable
 
 set laststatus=2
 set statusline+=%F
@@ -54,6 +55,7 @@ Plug 'nvie/vim-flake8'
 call plug#end()
 
 " misc settings
+let g:vim_markdown_folding_disabled = 1
 let g:vimtex_view_method = 'zathura' " set zathura as default pdf
 let g:pandoc#syntax#conceal#use = 0 " stop hiding syntax
 let g:slime_target = "tmux"
