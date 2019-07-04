@@ -18,14 +18,17 @@ set statusline+=%F
 " hotkeys
 map <C-n> :NERDTreeToggle<CR>
 map <C-a> :"*y<CR>
-map <C-A> :%y+<CR>
+map <C-S-a> :%y+<CR>
+nnoremap H gt
+nnoremap L gT
 nnoremap <C-q> :q!<CR>
 nnoremap <C-j> <C-W><C-j>
 nnoremap <C-k> <C-W><C-k>
 nnoremap <C-l> <C-W><C-l>
 nnoremap <C-h> <C-W><C-h>
 
-set tabstop =2
+
+set tabstop=2
 set expandtab
 set shiftwidth=2
 set softtabstop=2
