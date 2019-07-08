@@ -19,8 +19,8 @@ set statusline+=%F
 map <C-n> :NERDTreeToggle<CR>
 map <C-a> :"*y<CR>
 map <C-S-a> :%y+<CR>
-nnoremap H gt
-nnoremap L gT
+nnoremap L gt
+nnoremap H gT
 nnoremap <C-q> :q!<CR>
 nnoremap <C-j> <C-W><C-j>
 nnoremap <C-k> <C-W><C-k>

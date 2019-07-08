@@ -262,7 +262,7 @@ label = %time%
 type = internal/volume
 
 format-volume = <label-volume> <bar-volume>
-label-volume = VOL
+label-volume = vol:
 label-volume-foreground = ${root.foreground}
 
 format-muted-prefix = " "
@@ -285,6 +285,7 @@ bar-volume-fill-font = 2
 bar-volume-empty = ─
 bar-volume-empty-font = 2
 bar-volume-empty-foreground = ${colors.foreground-alt}
+format-underline =  ${colors.primary}
 
 [module/battery]
 type = internal/battery
