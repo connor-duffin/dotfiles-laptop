@@ -1,5 +1,5 @@
 #!/bin/bash
 
-rsync -av ~/.vimrc 21712081@130.95.16.134:~/.vimrc 
-rsync -av ~/.tmux.conf 21712081@130.95.16.134:~/.tmux.conf 
-rsync -av ~/.config/ranger/rc.conf 21712081@130.95.16.134:~/.config/ranger/rc.conf 
+rsync -av ~/.vimrc connor@130.95.16.134:~/.vimrc 
+rsync -av ~/.tmux.conf connor@130.95.16.134:~/.tmux.conf 
+rsync -av ~/.config/ranger/rc.conf connor@130.95.16.134:~/.config/ranger/rc.conf 
