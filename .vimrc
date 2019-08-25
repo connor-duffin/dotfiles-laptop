@@ -24,6 +24,8 @@ set background=dark
 map <C-n> :NERDTreeToggle<CR>
 map <C-a> :"*y<CR>
 map <C-S-a> :%y+<CR>
+nnoremap j gj
+nnoremap k gk
 nnoremap L gt
 nnoremap H gT
 nnoremap <C-q> :q!<CR>
@@ -89,4 +91,5 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 
+" turn off indentation NO MATTER WHAT
 filetype indent off
