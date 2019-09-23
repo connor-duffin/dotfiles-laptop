@@ -1,4 +1,6 @@
 #!/bin/bash
+set -o nounset
+set -o errexit
 
 rsync -av ~/.vimrc connor@130.95.16.134:~/.vimrc 
 rsync -av ~/.tmux.conf connor@130.95.16.134:~/.tmux.conf 
