@@ -1,0 +1,8 @@
+#!/bin/bash
+set -o nounset
+set -o errexit
+
+BASH_HISTORY="/home/connor/.bash_history"
+SEARCH_TERM="$1"
+
+cat "$BASH_HISTORY" | grep "$SEARCH_TERM"
