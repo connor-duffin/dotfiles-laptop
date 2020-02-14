@@ -169,7 +169,8 @@ for_window [instance="dropdown"] move scratchpad
 
 # auto start stuff
 exec xset b off
-exec feh --bg-fill "/home/connor/Pictures/Wallpapers/grey-wall.jpg"
+exec feh --bg-fill "/home/connor/Pictures/autumn/1569914053562.jpg"
+exec --no-startup-id mpd
 exec --no-startup-id compton
 exec --no-startup-id dropbox
 exec --no-startup-id nm-applet
@@ -177,7 +178,8 @@ exec --no-startup-id redshift
 exec --no-startup-id unclutter -grab &
 
 # hotkeys
-bindsym $mod+b       exec --no-startup-id firefox
+bindsym $mod+m       exec --no-startup-id $term -e ncmpcpp
+bindsym $mod+b       exec --no-startup-id chromium
 bindsym $mod+Shift+b exec --no-startup-id qutebrowser
 bindsym $mod+c       exec --no-startup-id rstudio-bin
 bindsym $mod+Shift+c exec --no-startup-id mathematica

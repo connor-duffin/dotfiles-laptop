@@ -41,7 +41,7 @@ set shiftwidth=2
 set softtabstop=2
 
 " indentation settings (i don't want indentation)
-set noai nocin nosi inde=<CR>
+" set noai nocin nosi inde=<CR>
 
 " gvim options (if needed)
 set guioptions-=m  "menu bar
@@ -64,6 +64,7 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'maverickg/stan.vim'
 Plug 'vim-syntastic/syntastic'
 Plug 'nvie/vim-flake8'
+Plug 'JuliaEditorSupport/julia-vim'
 call plug#end()
 
 " more misc settings
@@ -92,4 +93,4 @@ let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 
 " turn off indentation NO MATTER WHAT
-filetype indent off
+" filetype indent off

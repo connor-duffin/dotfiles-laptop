@@ -2,6 +2,8 @@
 set -o nounset
 set -o errexit
 
-rsync -av ~/.vimrc connor@130.95.16.134:~/.vimrc 
-rsync -av ~/.tmux.conf connor@130.95.16.134:~/.tmux.conf 
-rsync -av ~/.config/ranger/rc.conf connor@130.95.16.134:~/.config/ranger/rc.conf 
+REMOTE=connor@130.95.16.147
+
+rsync -av ~/.vimrc $REMOTE:~/.vimrc 
+rsync -av ~/.tmux.conf $REMOTE:~/.tmux.conf 
+rsync -av ~/.config/ranger/rc.conf $REMOTE:~/.config/ranger/rc.conf 
